@@ -9,6 +9,7 @@ import (
 func main() {
 	e := echo.New()
 
+	e.GET("/", method.Infomation)
 	e.GET("/exit", method.Exit)
 
 	e.Start(":8080")
